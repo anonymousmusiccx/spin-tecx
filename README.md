@@ -23,8 +23,8 @@ Submits a URL to VirusTotal, polls for the multi-vendor analysis, and prints a c
 
 ```bash
 pkg install curl jq          # Termux; use your distro's package manager elsewhere
-git clone https://github.com/<your-username>/spintecx-scan.git
-cd spintecx-scan
+git clone https://github.com/anonymousmusiccx/spin-tecx.git
+cd spin-tecx
 chmod +x spintecx-scan
 mv spintecx-scan $PREFIX/bin/        # Termux
 # or: sudo mv spintecx-scan /usr/local/bin/   # regular Linux
