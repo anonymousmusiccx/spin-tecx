@@ -21,13 +21,41 @@ Submits a URL to VirusTotal, polls for the multi-vendor analysis, and prints a c
 
 ## Install
 
+**1. Install dependencies**
+
 ```bash
-pkg install curl jq          # Termux; use your distro's package manager elsewhere
+pkg install curl jq
+```
+*(Termux command. On regular Linux, use your distro's package manager instead.)*
+
+**2. Clone the repo**
+
+```bash
 git clone https://github.com/anonymousmusiccx/spin-tecx.git
+```
+
+**3. Enter the repo folder**
+
+```bash
 cd spin-tecx
+```
+
+**4. Make the script executable**
+
+```bash
 chmod +x spintecx-scan
-mv spintecx-scan $PREFIX/bin/        # Termux
-# or: sudo mv spintecx-scan /usr/local/bin/   # regular Linux
+```
+
+**5. Move it onto your PATH**
+
+Termux:
+```bash
+mv spintecx-scan $PREFIX/bin/
+```
+
+Regular Linux:
+```bash
+sudo mv spintecx-scan /usr/local/bin/
 ```
 
 **Before running any script from GitHub, open it and read it first.** This one is plain bash — open `spintecx-scan` in a text editor and check it does what this README says before you `chmod +x` and run it. That habit matters more than this specific script.
